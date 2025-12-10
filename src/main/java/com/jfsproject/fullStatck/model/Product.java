@@ -16,18 +16,10 @@ public class Product {
     public  Product(){
 
     }
-    public Product(int price, String prodName, int prodId) {
-        this.price = price;
-        this.prodName = prodName;
+    public Product( int prodId, String prodName,int price) {
         this.prodId = prodId;
-    }
-
-    public String getProdName() {
-        return prodName;
-    }
-
-    public void setProdName(String prodName) {
         this.prodName = prodName;
+        this.price = price;
     }
 
     public int getProdId() {
@@ -37,6 +29,14 @@ public class Product {
     public void setProdId(int prodId) {
         this.prodId = prodId;
     }
+    public String getProdName() {
+        return prodName;
+    }
+
+    public void setProdName(String prodName) {
+        this.prodName = prodName;
+    }
+
 
     public int getPrice() {
         return price;
@@ -44,5 +44,14 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "prodId=" + prodId +
+                ", prodName='" + prodName + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
