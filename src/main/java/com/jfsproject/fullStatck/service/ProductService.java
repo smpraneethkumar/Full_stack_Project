@@ -13,6 +13,6 @@ public class ProductService {
             new Product(102,"samsung",175000),
             new Product(103,"iqoo",15000));
     public List<Product> getProducts(){
-        return  null;
+        return  product;
     }
 }
